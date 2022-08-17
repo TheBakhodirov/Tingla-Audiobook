@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: calc(10px + 0.390625vw);
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Noto Sans Display', sans-serif;
+    background: repeating-linear-gradient(to right, transparent 10%, #eee 10% 10.1%, transparent 10.1% 36.67%);
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: .2s;
+
+    &:hover {
+        color: #0505e2;
+    }
+}
+
+.abs-shape {
+    position: absolute;
+
+    img {
+        -webkit-user-drag: none;
+        user-select: none;
+    }
+}

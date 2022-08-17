@@ -1,0 +1,561 @@
+@media (max-width: 1200px) {
+
+    img[alt*="image"]:not([alt^="mobile"]) {
+        max-width: 100%;
+    }
+
+    header {
+        .container {
+
+            .text,
+            .img {
+                width: 50%;
+
+                h2 {
+                    font-size: 4.2rem;
+                    line-height: 5.2rem;
+                }
+
+            }
+        }
+    }
+
+    main {
+        .container {
+            & > div {
+
+                .text,
+                .img {
+                    width: 50% !important;
+                }
+            }
+
+            .video {
+                height: 450px;
+
+                video {
+                    object-fit: fill;
+                }
+            }
+
+            .advantages {
+                .img {
+                    img {
+                        max-width: 140%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .abs-shape {
+        img {
+            max-width: 80%;
+        }
+    }
+
+    header {
+        .container {
+            padding-top: 5rem;
+
+            .text,
+            .img {
+                width: 50%;
+
+                h2 {
+                    font-size: 3.8rem;
+                    line-height: 4.8rem;
+                }
+            }
+        }
+    }
+
+    main {
+        .container {
+            & > div {
+                padding-bottom: 2rem !important;
+                flex-direction: column;
+                gap: 2rem !important;
+
+                &.flex-reverse {
+                    flex-direction: column-reverse;
+                }
+
+                .text {
+                    width: 100% !important;
+                    text-align: center;
+
+                    h3 {
+                        margin-bottom: 1rem !important;
+                    }
+                }
+
+                .img {
+                    width: 100% !important;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+
+            .about-project {
+                margin-bottom: 120px;
+
+                .img {
+                    img {
+                        max-width: 300px;
+                        right: auto;
+                    }
+                }
+
+                .star {
+                    left: 10%;
+                }
+            }
+
+            .advantages {
+                gap: 1rem !important;
+
+                .img {
+                    width: 80% !important;
+
+                    img {
+                        max-width: 120%;
+                    }
+                }
+
+                .text {
+                    width: 80% !important;
+                    padding-bottom: 1rem;
+
+                    h3 {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .payment-system {
+                margin-bottom: 230px;
+            }
+
+            .mobile-app {
+                height: auto;
+                padding: 0;
+                background-color: transparent;
+
+                .img {
+                    width: 100% !important;
+                    height: 300px;
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    background-color: #f8f8f8;
+                    border-radius: 20px;
+
+                    img {
+                        max-width: 60%;
+                        position: absolute;
+                        bottom: 0;
+                    }
+                }
+
+                .text {
+                    padding: 0 2rem;
+
+                    .download {
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 786px) {
+
+    .abs-shape {
+        img {
+            max-width: 60%;
+        }
+    }
+
+    header {
+        .container {
+            padding-top: 7rem;
+
+            .text {
+                h2 {
+                    font-size: 3.3rem;
+                    line-height: 4rem;
+                }
+
+                p {
+                    margin-bottom: 2.5rem;
+                    font-size: 1.3rem;
+                    line-height: 2rem;
+                }
+
+                .shadow {
+                    max-width: 200px;
+                    max-height: 200px;
+                    filter: blur(80px);
+                    top: -10%;
+                    left: 0;
+                }
+            }
+        }
+    }
+
+
+    main {
+        .container {
+
+            .video {
+                height: 400px;
+                margin-bottom: 250px;
+
+                video {
+                    border-radius: 10px;
+                }
+            }
+
+            .about-project {
+                .img {
+                    img {
+                        max-width: 265px;
+                    }
+                }
+            }
+
+            .advantages {
+                .img {
+                    img {
+                        max-width: 100%;
+                    }
+                }
+
+                .text {
+                    .shadow {
+                        &.yellow {
+                            max-width: 300px;
+                            max-height: 300px;
+                            filter: blur(120px);
+                            top: -15%;
+                            left: 5%;
+                        }
+
+                        &.blue {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .mobile-app {
+                padding: 0;
+                background-color: transparent;
+
+                .img {
+                    width: 100% !important;
+                    height: 300px;
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    background-color: #f8f8f8;
+                    border-radius: 20px;
+
+                    img {
+                        max-width: 60%;
+                        position: absolute;
+                        bottom: 0;
+                    }
+                }
+
+                .text {
+                    padding: 0 2rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        background: repeating-linear-gradient(to right, transparent 4%, #eee 4% 4.1%, transparent 4.1% 34.67%);
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .abs-shape {
+        width: 45px;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    header {
+        margin-bottom: 1rem;
+        padding-bottom: 12rem;
+
+        .container {
+            flex-direction: column-reverse;
+
+            .logo {
+                width: 110px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .text {
+                width: 100%;
+
+                h2 {
+                    width: 90%;
+                    font-size: 2.7rem;
+                }
+
+                p {
+                    margin-bottom: 2rem;
+                }
+
+                .shadow {
+                    max-width: 150px;
+                    max-height: 150px;
+                    filter: blur(60px);
+                }
+            }
+
+            .img {
+                width: 80%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .abs-shape {
+                &.star {
+                    top: 20%;
+                    right: 0;
+                }
+
+                &.ring {
+                    bottom: 50%;
+                    left: 0;
+                }
+
+                &.asterisk {
+                    bottom: -10%;
+                    right: 0;
+                }
+            }
+        }
+    }
+
+    main {
+        .container {
+            & > div {
+
+                .text {
+                    text-align: left;
+                }
+            }
+
+            .video {
+                height: 220px;
+                margin-bottom: 200px;
+
+                video {
+                    object-fit: cover;
+                }
+            }
+
+            .about-project {
+                padding: 0 2rem;
+                margin-bottom: 120px;
+                border-radius: 10px;
+
+                .img {
+                    display: flex;
+                    justify-content: center;
+
+                    img {
+                        max-width: 50%;
+                        min-width: 200px;
+                        bottom: 0;
+                        right: auto;
+                    }
+                }
+
+                .text {
+                    h3 {
+                        font-size: 2rem;
+                    }
+                }
+
+                .star {
+                    width: 70px;
+                    top: -40%;
+                    left: 0;
+                    transform: rotate(34deg);
+                }
+            }
+
+            .advantages {
+                margin-bottom: 200px;
+
+                .img {
+                    display: flex;
+                    justify-content: flex-end;
+
+                    img {
+                        max-width: 90%;
+                    }
+                }
+
+                .text {
+                    width: 100% !important;
+
+                    h3 {
+                        font-size: 2rem;
+                    }
+
+                    .shadow {
+                        &.yellow {
+                            max-width: 150px;
+                            max-height: 150px;
+                            filter: blur(60px);
+                        }
+                    }
+                }
+
+                .black-hole {
+                    bottom: auto;
+                    top: -10%;
+                    left: auto;
+                    right: 0;
+                }
+            }
+
+            .payment-system {
+                height: 560px;
+                margin-bottom: 190px;
+
+                .asterisk {
+                    bottom: -15%;
+                    right: auto;
+                    left: 5%;
+                }
+            }
+
+            .mobile-app {
+                margin-bottom: 130px;
+                border-radius: 10px;
+
+                .img {
+                    height: 210px;
+
+                    img {
+                        max-width: 50%;
+                        min-width: 230px;
+                    }
+                }
+
+                .text {
+                    padding: 0;
+
+                    h3 {
+                        font-size: 1.8rem;
+                    }
+
+                    .download {
+                        justify-content: flex-start;
+
+                        a {
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+
+                .star {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    footer {
+        padding-bottom: 2rem;
+
+        .container {
+            height: 160px;
+            flex-direction: column;
+            position: relative;
+            justify-content: flex-start;
+            gap: 2rem;
+
+            & > div {
+                flex: initial;
+            }
+
+            .logo {
+                a {
+                    width: 90px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                p {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    font-size: 1rem;
+                }
+            }
+
+            .links {
+                gap: 1rem;
+                font-size: 1.1rem;
+            }
+
+            .contact {
+                padding-top: 0.5rem;
+                flex-direction: column-reverse;
+                gap: 2rem;
+                position: absolute;
+                top: 0;
+                right: 0;
+
+                .socials {
+                    font-size: 2rem;
+                    align-self: flex-end;
+                }
+
+                .call {
+                    font-size: 1.4rem;
+
+                    .phone-number {
+                        p {
+                            font-size: 1rem;
+                        }
+
+                        a {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+@mixin title($fw, $clr) {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: $fw;
+    line-height: 3.8rem;
+    letter-spacing: -0.01em;
+    color: $clr;
+}
+
+@mixin paragraph($clr) {
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: $clr;
+}
+
+@mixin btn($fs) {
+    display: inline-block;
+    padding: 1.1rem 2.5rem;
+    font-size: $fs;
+    background-color: $primary;
+    color: #fff;
+    border: 2px solid $primary;
+    border-radius: 8px;
+
+    &:hover {
+        filter: saturate(2);
+    }
+}
+
+@mixin ellipse-shadow($size, $bg-clr) {
+    width: $size;
+    height: $size;
+    position: absolute;
+    background-color: $bg-clr;
+    border-radius: 50%;
+    opacity: 0.3;
+    filter: blur(150px);
+    z-index: -1;
+}

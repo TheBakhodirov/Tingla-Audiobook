@@ -1,0 +1,702 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: calc(10px + 0.390625vw);
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noto Sans Display", sans-serif;
+  background: repeating-linear-gradient(to right, transparent 10%, #eee 10% 10.1%, transparent 10.1% 36.67%);
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.2s;
+}
+a:hover {
+  color: #0505e2;
+}
+
+.abs-shape {
+  position: absolute;
+}
+.abs-shape img {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+header {
+  margin-bottom: 5rem;
+  padding: 4rem 0 8rem;
+  overflow: hidden;
+}
+header .container {
+  padding-top: 3rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+header .container .logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+header .container .text {
+  position: relative;
+  width: 60%;
+}
+header .container .text h2 {
+  margin-bottom: 1.5rem;
+  font-size: 5rem;
+  line-height: 6rem;
+  letter-spacing: -0.02em;
+}
+header .container .text p {
+  margin-bottom: 4.5rem;
+  font-size: 1.5rem;
+  line-height: 2.3rem;
+}
+header .container .text .download-btn {
+  display: inline-block;
+  padding: 1.1rem 2.5rem;
+  font-size: 1.5rem;
+  background-color: #0f0f52;
+  color: #fff;
+  border: 2px solid #0f0f52;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+}
+header .container .text .download-btn:hover {
+  filter: saturate(2);
+}
+header .container .text .shadow {
+  width: 380px;
+  height: 380px;
+  position: absolute;
+  background-color: #FCBD2C;
+  border-radius: 50%;
+  opacity: 0.3;
+  filter: blur(150px);
+  z-index: -1;
+  top: 10%;
+  left: 0;
+}
+header .container .img {
+  width: 40%;
+}
+header .container .abs-shape.star {
+  top: -10%;
+  right: 22%;
+}
+header .container .abs-shape.ring {
+  bottom: 0;
+  left: -8%;
+}
+header .container .abs-shape.asterisk {
+  bottom: -5%;
+  right: -5%;
+}
+
+main .container .video {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 350px;
+}
+main .container .video video {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: #0f0f52;
+  object-fit: cover;
+  object-position: center;
+}
+main .container .about-project, main .container .payment-system {
+  width: 100%;
+  height: 480px;
+  padding: 0 5rem;
+  margin-bottom: 220px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  background-color: #0f0f52;
+  border-radius: 20px;
+}
+main .container .about-project .text, main .container .payment-system .text {
+  width: 60%;
+  color: #fff;
+}
+main .container .about-project .text h3, main .container .payment-system .text h3 {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.8rem;
+  letter-spacing: -0.01em;
+  color: inherit;
+}
+main .container .about-project .text p, main .container .payment-system .text p {
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: inherit;
+}
+main .container .about-project .img, main .container .payment-system .img {
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+main .container .about-project .img img, main .container .payment-system .img img {
+  position: absolute;
+  bottom: -10%;
+  right: 0;
+}
+main .container .about-project .star, main .container .payment-system .star {
+  top: -50%;
+  left: 30%;
+}
+main .container .advantages {
+  margin-bottom: 360px;
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+  position: relative;
+}
+main .container .advantages .img {
+  width: 45%;
+}
+main .container .advantages .text {
+  width: 55%;
+  position: relative;
+}
+main .container .advantages .text h3 {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 3.8rem;
+  letter-spacing: -0.01em;
+  color: #000;
+  width: 110%;
+}
+main .container .advantages .text p {
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #000;
+}
+main .container .advantages .text .shadow {
+  max-width: 100%;
+}
+main .container .advantages .text .shadow.yellow {
+  width: 380px;
+  height: 380px;
+  position: absolute;
+  background-color: #FCBD2C;
+  border-radius: 50%;
+  opacity: 0.3;
+  filter: blur(150px);
+  z-index: -1;
+  top: -30%;
+  left: 0;
+}
+main .container .advantages .text .shadow.blue {
+  width: 490px;
+  height: 490px;
+  position: absolute;
+  background-color: #0F0F54;
+  border-radius: 50%;
+  opacity: 0.3;
+  filter: blur(150px);
+  z-index: -1;
+  top: -10%;
+  left: 10%;
+  opacity: 0.15;
+}
+main .container .advantages .black-hole {
+  bottom: -15%;
+  left: 0;
+}
+main .container .payment-system {
+  background-color: #F9E0C7;
+  position: relative;
+}
+main .container .payment-system .text {
+  color: #000;
+}
+main .container .payment-system .asterisk {
+  bottom: -30%;
+  right: 5%;
+  transform: rotate(15.79deg);
+}
+main .container .mobile-app {
+  width: 100%;
+  height: 480px;
+  padding: 0 5rem;
+  margin-bottom: 170px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  background-color: #f8f8f8;
+  border-radius: 20px;
+}
+main .container .mobile-app .text h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+main .container .mobile-app .text .download {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+main .container .mobile-app .text .download a:hover {
+  filter: saturate(2);
+}
+main .container .mobile-app .star {
+  bottom: -14%;
+  left: -12%;
+  transform: rotate(51deg);
+}
+
+footer {
+  padding-bottom: 4rem;
+}
+footer .container {
+  height: 100px;
+  display: flex;
+}
+footer .container > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+footer .container .logo p {
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.5019607843);
+}
+footer .container .contact .call {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+footer .container .contact .call .phone-number p {
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.5019607843);
+}
+footer .container .contact .call .phone-number a {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+footer .container .contact .socials {
+  display: flex;
+  gap: 1.4rem;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1200px) {
+  img[alt*=image]:not([alt^=mobile]) {
+    max-width: 100%;
+  }
+  header .container .text,
+header .container .img {
+    width: 50%;
+  }
+  header .container .text h2,
+header .container .img h2 {
+    font-size: 4.2rem;
+    line-height: 5.2rem;
+  }
+  main .container > div .text,
+main .container > div .img {
+    width: 50% !important;
+  }
+  main .container .video {
+    height: 450px;
+  }
+  main .container .video video {
+    object-fit: fill;
+  }
+  main .container .advantages .img img {
+    max-width: 140%;
+  }
+}
+@media (max-width: 992px) {
+  .abs-shape img {
+    max-width: 80%;
+  }
+  header .container {
+    padding-top: 5rem;
+  }
+  header .container .text,
+header .container .img {
+    width: 50%;
+  }
+  header .container .text h2,
+header .container .img h2 {
+    font-size: 3.8rem;
+    line-height: 4.8rem;
+  }
+  main .container > div {
+    padding-bottom: 2rem !important;
+    flex-direction: column;
+    gap: 2rem !important;
+  }
+  main .container > div.flex-reverse {
+    flex-direction: column-reverse;
+  }
+  main .container > div .text {
+    width: 100% !important;
+    text-align: center;
+  }
+  main .container > div .text h3 {
+    margin-bottom: 1rem !important;
+  }
+  main .container > div .img {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+  }
+  main .container .about-project, main .container .payment-system {
+    margin-bottom: 120px;
+  }
+  main .container .about-project .img img, main .container .payment-system .img img {
+    max-width: 300px;
+    right: auto;
+  }
+  main .container .about-project .star, main .container .payment-system .star {
+    left: 10%;
+  }
+  main .container .advantages {
+    gap: 1rem !important;
+  }
+  main .container .advantages .img {
+    width: 80% !important;
+  }
+  main .container .advantages .img img {
+    max-width: 120%;
+  }
+  main .container .advantages .text {
+    width: 80% !important;
+    padding-bottom: 1rem;
+  }
+  main .container .advantages .text h3 {
+    width: 100%;
+  }
+  main .container .payment-system {
+    margin-bottom: 230px;
+  }
+  main .container .mobile-app {
+    height: auto;
+    padding: 0;
+    background-color: transparent;
+  }
+  main .container .mobile-app .img {
+    width: 100% !important;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #f8f8f8;
+    border-radius: 20px;
+  }
+  main .container .mobile-app .img img {
+    max-width: 60%;
+    position: absolute;
+    bottom: 0;
+  }
+  main .container .mobile-app .text {
+    padding: 0 2rem;
+  }
+  main .container .mobile-app .text .download {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 786px) {
+  .abs-shape img {
+    max-width: 60%;
+  }
+  header .container {
+    padding-top: 7rem;
+  }
+  header .container .text h2 {
+    font-size: 3.3rem;
+    line-height: 4rem;
+  }
+  header .container .text p {
+    margin-bottom: 2.5rem;
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+  header .container .text .shadow {
+    max-width: 200px;
+    max-height: 200px;
+    filter: blur(80px);
+    top: -10%;
+    left: 0;
+  }
+  main .container .video {
+    height: 400px;
+    margin-bottom: 250px;
+  }
+  main .container .video video {
+    border-radius: 10px;
+  }
+  main .container .about-project .img img, main .container .payment-system .img img {
+    max-width: 265px;
+  }
+  main .container .advantages .img img {
+    max-width: 100%;
+  }
+  main .container .advantages .text .shadow.yellow {
+    max-width: 300px;
+    max-height: 300px;
+    filter: blur(120px);
+    top: -15%;
+    left: 5%;
+  }
+  main .container .advantages .text .shadow.blue {
+    display: none;
+  }
+  main .container .mobile-app {
+    padding: 0;
+    background-color: transparent;
+  }
+  main .container .mobile-app .img {
+    width: 100% !important;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #f8f8f8;
+    border-radius: 20px;
+  }
+  main .container .mobile-app .img img {
+    max-width: 60%;
+    position: absolute;
+    bottom: 0;
+  }
+  main .container .mobile-app .text {
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 576px) {
+  body {
+    background: repeating-linear-gradient(to right, transparent 4%, #eee 4% 4.1%, transparent 4.1% 34.67%);
+  }
+  .container {
+    width: 90%;
+  }
+  .abs-shape {
+    width: 45px;
+  }
+  .abs-shape img {
+    max-width: 100%;
+  }
+  header {
+    margin-bottom: 1rem;
+    padding-bottom: 12rem;
+  }
+  header .container {
+    flex-direction: column-reverse;
+  }
+  header .container .logo {
+    width: 110px;
+  }
+  header .container .logo img {
+    width: 100%;
+  }
+  header .container .text {
+    width: 100%;
+  }
+  header .container .text h2 {
+    width: 90%;
+    font-size: 2.7rem;
+  }
+  header .container .text p {
+    margin-bottom: 2rem;
+  }
+  header .container .text .shadow {
+    max-width: 150px;
+    max-height: 150px;
+    filter: blur(60px);
+  }
+  header .container .img {
+    width: 80%;
+  }
+  header .container .img img {
+    width: 100%;
+  }
+  header .container .abs-shape.star {
+    top: 20%;
+    right: 0;
+  }
+  header .container .abs-shape.ring {
+    bottom: 50%;
+    left: 0;
+  }
+  header .container .abs-shape.asterisk {
+    bottom: -10%;
+    right: 0;
+  }
+  main .container > div .text {
+    text-align: left;
+  }
+  main .container .video {
+    height: 220px;
+    margin-bottom: 200px;
+  }
+  main .container .video video {
+    object-fit: cover;
+  }
+  main .container .about-project, main .container .payment-system {
+    padding: 0 2rem;
+    margin-bottom: 120px;
+    border-radius: 10px;
+  }
+  main .container .about-project .img, main .container .payment-system .img {
+    display: flex;
+    justify-content: center;
+  }
+  main .container .about-project .img img, main .container .payment-system .img img {
+    max-width: 50%;
+    min-width: 200px;
+    bottom: 0;
+    right: auto;
+  }
+  main .container .about-project .text h3, main .container .payment-system .text h3 {
+    font-size: 2rem;
+  }
+  main .container .about-project .star, main .container .payment-system .star {
+    width: 70px;
+    top: -40%;
+    left: 0;
+    transform: rotate(34deg);
+  }
+  main .container .advantages {
+    margin-bottom: 200px;
+  }
+  main .container .advantages .img {
+    display: flex;
+    justify-content: flex-end;
+  }
+  main .container .advantages .img img {
+    max-width: 90%;
+  }
+  main .container .advantages .text {
+    width: 100% !important;
+  }
+  main .container .advantages .text h3 {
+    font-size: 2rem;
+  }
+  main .container .advantages .text .shadow.yellow {
+    max-width: 150px;
+    max-height: 150px;
+    filter: blur(60px);
+  }
+  main .container .advantages .black-hole {
+    bottom: auto;
+    top: -10%;
+    left: auto;
+    right: 0;
+  }
+  main .container .payment-system {
+    height: 560px;
+    margin-bottom: 190px;
+  }
+  main .container .payment-system .asterisk {
+    bottom: -15%;
+    right: auto;
+    left: 5%;
+  }
+  main .container .mobile-app {
+    margin-bottom: 130px;
+    border-radius: 10px;
+  }
+  main .container .mobile-app .img {
+    height: 210px;
+  }
+  main .container .mobile-app .img img {
+    max-width: 50%;
+    min-width: 230px;
+  }
+  main .container .mobile-app .text {
+    padding: 0;
+  }
+  main .container .mobile-app .text h3 {
+    font-size: 1.8rem;
+  }
+  main .container .mobile-app .text .download {
+    justify-content: flex-start;
+  }
+  main .container .mobile-app .text .download a img {
+    width: 100%;
+  }
+  main .container .mobile-app .star {
+    display: none;
+  }
+  footer {
+    padding-bottom: 2rem;
+  }
+  footer .container {
+    height: 160px;
+    flex-direction: column;
+    position: relative;
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+  footer .container > div {
+    flex: initial;
+  }
+  footer .container .logo a {
+    width: 90px;
+  }
+  footer .container .logo a img {
+    width: 100%;
+  }
+  footer .container .logo p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 1rem;
+  }
+  footer .container .links {
+    gap: 1rem;
+    font-size: 1.1rem;
+  }
+  footer .container .contact {
+    padding-top: 0.5rem;
+    flex-direction: column-reverse;
+    gap: 2rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  footer .container .contact .socials {
+    font-size: 2rem;
+    align-self: flex-end;
+  }
+  footer .container .contact .call {
+    font-size: 1.4rem;
+  }
+  footer .container .contact .call .phone-number p {
+    font-size: 1rem;
+  }
+  footer .container .contact .call .phone-number a {
+    font-size: 1.2rem;
+  }
+}/*# sourceMappingURL=main.css.map */

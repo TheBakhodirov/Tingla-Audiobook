@@ -1,0 +1,300 @@
+// SASS PARTIALS
+@import "vars";
+@import "defaults";
+@import "mixins";
+
+
+
+// STYLE
+header {
+    margin-bottom: 5rem;
+    padding: 4rem 0 8rem;
+    overflow: hidden;
+
+    .container {
+        padding-top: 3rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        .logo {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .text {
+            position: relative;
+            width: 60%;
+
+            h2 {
+                margin-bottom: 1.5rem;
+                font-size: 5rem;
+                line-height: 6rem;
+                letter-spacing: -0.02em;
+            }
+
+            p {
+                margin-bottom: 4.5rem;
+                font-size: 1.5rem;
+                line-height: 2.3rem;
+            }
+
+            .download-btn {
+                @include btn(1.5rem);
+                position: relative;
+                z-index: 1;
+            }
+
+            .shadow {
+                @include ellipse-shadow(380px, $yellow-shadow);
+                top: 10%;
+                left: 0;
+            }
+        }
+
+        .img {
+            width: 40%;
+        }
+
+        .abs-shape {
+
+            &.star {
+                top: -10%;
+                right: 22%;
+            }
+
+            &.ring {
+                bottom: 0;
+                left: -8%;
+            }
+
+            &.asterisk {
+                bottom: -5%;
+                right: -5%;
+            }
+        }
+    }
+}
+
+main {
+    .container {
+        .video {
+            width: 100%;
+            height: 500px;
+            margin-bottom: 350px;
+
+            video {
+                width: 100%;
+                height: 100%;
+                border-radius: 20px;
+                background-color: $primary;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+
+        .about-project {
+            width: 100%;
+            height: 480px;
+            padding: 0 5rem;
+            margin-bottom: 220px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            background-color: $primary;
+            border-radius: 20px;
+
+            .text {
+                width: 60%;
+                color: #fff;
+
+                h3 {
+                    @include title(700, inherit);
+                }
+
+                p {
+                    @include paragraph(inherit);
+                }
+            }
+
+            .img {
+                width: 40%;
+                height: 100%;
+                position: relative;
+
+                img {
+                    position: absolute;
+                    bottom: -10%;
+                    right: 0;
+                }
+            }
+
+            .star {
+                top: -50%;
+                left: 30%;
+            }
+        }
+
+        .advantages {
+            margin-bottom: 360px;
+            display: flex;
+            align-items: center;
+            gap: 8rem;
+            position: relative;
+
+            .img {
+                width: 45%;
+            }
+
+            .text {
+                width: 55%;
+                position: relative;
+
+                h3 {
+                    @include title(600, #000);
+                    width: 110%
+                }
+
+                p {
+                    @include paragraph(#000);
+                }
+
+                .shadow {
+                    max-width: 100%;
+
+                    &.yellow {
+                        @include ellipse-shadow(380px, $yellow-shadow);
+                        top: -30%;
+                        left: 0;
+                    }
+
+                    &.blue {
+                        @include ellipse-shadow(490px, $blue-shadow);
+                        top: -10%;
+                        left: 10%;
+                        opacity: .15;
+                    }
+                }
+            }
+
+
+            .black-hole {
+                bottom: -15%;
+                left: 0;
+            }
+
+        }
+
+        .payment-system {
+            @extend .about-project;
+            background-color: $secondary;
+            position: relative;
+
+            .text {
+                color: #000;
+
+            }
+
+            .asterisk {
+                bottom: -30%;
+                right: 5%;
+                transform: rotate(15.79deg);
+            }
+        }
+
+        .mobile-app {
+            width: 100%;
+            height: 480px;
+            padding: 0 5rem;
+            margin-bottom: 170px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            background-color: #f8f8f8;
+            border-radius: 20px;
+
+            .text {
+                h3 {
+                    font-size: 2.5rem;
+                    font-weight: 600;
+                    margin-bottom: 3rem;
+                }
+
+                .download {
+                    display: flex;
+                    align-items: center;
+                    gap: .8rem;
+
+                    a {
+                        &:hover {
+                            filter: saturate(2);
+                        }
+                    }
+                }
+            }
+
+            .star {
+                bottom: -14%;
+                left: -12%;
+                transform: rotate(51deg);
+            }
+        }
+    }
+}
+
+footer {
+    padding-bottom: 4rem;
+
+    .container {
+        height: 100px;
+        display: flex;
+
+        & > div {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: start;
+        }
+
+        .logo {
+            p {
+                font-size: 0.8rem;
+                color: #00000080;
+            }
+        }
+
+        .contact {
+            .call {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+
+                .phone-number {
+                    p {
+                        font-size: .8rem;
+                        color: #00000080;
+                    }
+
+                    a {
+                        font-size: 1.1rem;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .socials {
+                display: flex;
+                gap: 1.4rem;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+
+// MEDIA QUERIES
+@import "media";
